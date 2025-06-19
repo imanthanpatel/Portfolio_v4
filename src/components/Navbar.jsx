@@ -1,5 +1,7 @@
 import { useState } from "react";
+import { motion } from "framer-motion"
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { fadeIn } from "../utils/motion";
 
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,7 +15,14 @@ function Navbar() {
     ];
 
     return (
-        <nav className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100">
+        <motion.nav 
+         variants={fadeIn('down', 0.2)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+             id="navbar"
+        className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100">
             <div className="container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 md:h-20 h-16">
 
                 {/* Logo */}
@@ -87,7 +96,7 @@ function Navbar() {
                     </a>
                 </div>
             )}
-        </nav>
+        </motion.nav>
     );
 }
 

@@ -1,6 +1,8 @@
 import React from 'react'
 import img from '../assets/profilepic.jpg'
-
+import { motion } from 'framer-motion'
+import { fadeIn } from '../utils/motion'
+//
 function Hero() {
 
 
@@ -10,11 +12,20 @@ function Hero() {
     {/* Left col */}
     <div className="w-full md:w-1/2 space-y-8">
     {/* Star Batch */}
-    <div className="flex items-center gap-2 bg-gray-50 w-fit px-4 py-2 rounded-full hover:bg-gray-100 transition-colors cursor-pointer group">
+   <motion.div
+   variants={fadeIn('right', 0.2)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+   >
+     <div className="flex items-center gap-2 bg-gray-50 w-fit px-4 py-2 rounded-full hover:bg-gray-100 transition-colors cursor-pointer group">
         <span className="text-blue-600 group-hover:text-amber-300 g:scale-110 transition-transform">★</span>
         <span>Jump Start Your growth</span>
-    </div>
+         </div>
+    </motion.div>
 
+  
 
     <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold leading-tight '>Manthan Patel <span className='text-blue-600 relative inline-block '>Frontend Devloper</span><span className='absolute bottom-0 left-0 w-full h-0.05 bg-blue-200/60 '> </span>
      <span className='inline-block ml-2 animate-pulse'>
