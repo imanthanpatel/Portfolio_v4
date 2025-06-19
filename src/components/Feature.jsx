@@ -44,9 +44,9 @@ function Feature() {
       </div>
       { /* Call to Action(btn) */}
       <div className="text-center mt-12">
-        <button className="bg-blue-600 text-white cursor-pointer px-8 py-3 rounded-full font-medium hover:bg-blue-700 transition-colors  relative">Start a Project
+       <a href="https://wa.me/9428841250"> <button className="bg-blue-600 text-white cursor-pointer px-8 py-3 rounded-full font-medium hover:bg-blue-700 transition-colors  relative">Start a Project
           <div className="absolute -z-10 w-full h-full rounded-full bg-blue-700 blur-xl top-0 left-0 "></div>
-        </button>
+        </button></a>
       </div>
     </section>
   );

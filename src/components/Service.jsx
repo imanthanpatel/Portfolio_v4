@@ -62,9 +62,9 @@ function Service() {
                     </div>
 
                     {/* CTA */}
-                    <button className="mt-6 px-6 py-3 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition">
+                    <a href="https://wa.me/9428841250"><button  className="mt-6 px-6 py-3 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition">
                         Get Started
-                    </button>
+                    </button></a>
                 </div>
 
                 {/* cards */}

@@ -13,7 +13,7 @@ function Project() {
 
                 {/* Right Content */}
                 <div className="md:w-1/2 w-full">
-                    <p className='text-orange-500 font-semibold'>SCHEDULE</p>
+                    <p className='text-orange-500 font-semibold'>Explore</p>
                     <h2 className='text-3xl md:text-4xl font-bold text-neutral-900 mt-4 mb-6'>
                         Explore My Projects
                     </h2>

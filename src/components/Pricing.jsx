@@ -51,7 +51,7 @@ function Pricing() {
 
                     <div className='text-center mt-12'>
                         <p className='text-xl text-gray-600 mb-4 '>Ready To Get Started?</p>
-                        <button className='bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors cursor-pointer'>Get Started</button>
+                       <a href="https://wa.me/9428841250"> <button  className='bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors cursor-pointer'>Get Started</button></a>
                     </div>
                 </div>
             </div>
