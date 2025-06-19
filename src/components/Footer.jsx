@@ -1,4 +1,4 @@
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 function Footer() {
   return (
@@ -19,13 +19,13 @@ function Footer() {
               Frontend Developer — passionate about clean UI and delightful UX. Open to freelance & full-time roles.
             </p>
             <div className="flex gap-3">
-              <a href="https://facebook.com" target="_blank" rel="noreferrer" className="p-2 bg-gray-200 rounded-full hover:bg-blue-500 hover:text-white transition">
-                <FaFacebookF />
+              <a href="https://github.com/imanthanpatel" target="_blank" rel="noreferrer" className="p-2 bg-gray-200 rounded-full hover:bg-gray-800 hover:text-white transition">
+                <FaGithub />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noreferrer" className="p-2 bg-gray-200 rounded-full hover:bg-blue-400 hover:text-white transition">
-                <FaTwitter />
+              <a href="https://www.instagram.com/manthan._.2408?igsh=MWU0eHZ4ajd2anNreg==" target="_blank" rel="noreferrer" className="p-2 bg-gray-200 rounded-full hover:bg-pink-500 hover:text-white transition">
+                <FaInstagram />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="p-2 bg-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition">
+              <a href="https://www.linkedin.com/in/manthan-patel-43680b315/" target="_blank" rel="noreferrer" className="p-2 bg-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition">
                 <FaLinkedinIn />
               </a>
             </div>
@@ -67,7 +67,7 @@ function Footer() {
 
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-          <p>Copyright © {new Date().getFullYear()} Manthan Patel .</p>
+          <p>Copyright © {new Date().getFullYear()} Manthan Patel.</p>
           <p>
             Built with ❤️ using React & Tailwind ·{' '}
             <a href="https://vercel.com" target="_blank" rel="noreferrer" className="text-blue-500 hover:underline">Hosted on Vercel</a>
