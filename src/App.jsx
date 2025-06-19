@@ -9,6 +9,7 @@ import Pricing from './components/Pricing.jsx';
 import Service from './components/Service.jsx';
 import Testimonial from './components/Testimonial.jsx';
 import Newsletter from './components/Newsletter.jsx';
+import Footer from './components/Footer.jsx';
 function App() {
   return(<>
   <main className='relative min-h-screen overflow-x-hidden'>
@@ -26,6 +27,9 @@ function App() {
       <Service/>
       <Testimonial/>
       <Newsletter/>
+      <Footer/>
+
+     
 
       </div>
       </main>

@@ -31,7 +31,11 @@ function Newsletter() {
 
   return (
     <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div className="bg-blue-600 rounded-2xl overflow-hidden">
+      <div className="bg-blue-600 rounded-2xl overflow-hidden relative">
+
+        {/* Optional: Slanted Background on right */}
+        <div className="hidden lg:block absolute right-0 top-0 h-full w-1/2 bg-blue-800 slant-bg"></div>
+
         <div className="relative md:px-16 py-16 px-6 md:py-24">
           <div className="relative flex flex-col lg:flex-row items-center justify-between gap-8">
             {/* Left */}
@@ -45,7 +49,7 @@ function Newsletter() {
             </div>
 
             {/* Form */}
-            <form onSubmit={handleSubmit} className="flex w-full max-w-md">
+            <form onSubmit={handleSubmit} className="flex w-full max-w-md z-10">
               <input
                 type="email"
                 required
@@ -56,7 +60,7 @@ function Newsletter() {
               />
               <button
                 type="submit"
-                className="bg-green-500  px-6 py-3 text-white font-semibold rounded-r-xl flex items-center gap-2 hover:bg-green-600 transition sm:w-auto w-full cursor-pointer"
+                className="bg-green-500 px-6 py-3 text-white font-semibold rounded-r-xl flex items-center gap-2 hover:bg-green-600 transition sm:w-auto w-full cursor-pointer"
               >
                 Discover <HiArrowRight />
               </button>
@@ -71,6 +75,13 @@ function Newsletter() {
           )}
         </div>
       </div>
+
+      {/* Slanted style */}
+      <style>{`
+        .slant-bg {
+          clip-path: polygon(60% 0%, 100% 0%, 100% 100%, 40% 100%);
+        }
+      `}</style>
     </section>
   );
 }

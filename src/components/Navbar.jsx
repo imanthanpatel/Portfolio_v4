@@ -51,7 +51,7 @@ function Navbar() {
 
                 {/* Get in Touch (Desktop Only) */}
                 <a
-                    href="#newsletter"
+                    href="https://wa.me/9428841250"
                     className="hidden md:block bg-blue-600 text-white px-6 py-2.5 rounded-lg hover:bg-blue-700 text-sm font-medium transition-all hover:shadow-lg hover:shadow-blue-700"
                 >
                     Get in touch
